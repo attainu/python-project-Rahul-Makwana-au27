@@ -13,6 +13,11 @@ class Parking_Lot:
         if sub_statement[0] == "park" and len(sub_statement) == 3:
             temp = "false"
             for i in range(len(self.avail_slots)):
+                if sub_statement[1] in self.avail_slots[i]:
+                    print("vehicle is already park ")
+                    temp = "true"
+                    break
+                
                 if len(self.avail_slots[i]) == 1:
                     self.avail_slots[i].append(sub_statement[1])
                     self.avail_slots[i].append(sub_statement[2])

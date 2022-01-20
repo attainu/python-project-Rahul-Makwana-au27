@@ -1,4 +1,4 @@
-### This file contains five files
+### This project contains 5 files excluding this file
 1. files.py -> if user choose file mode to run the code
 2. interaction.py -> if you choose interactive mode to run the code
 3. function.py-> this file contains functions, which is used in this project
